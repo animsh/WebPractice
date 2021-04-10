@@ -1,176 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Website</title>
-    <meta name="description" content="Portfolio" />
-  </head>
-  <body>
-    <table cellspacing="20">
-      <tr>
-        <td>
-          <img
-            src="https://avatars.githubusercontent.com/u/68194471?v=4"
-            width="200"
-            alt="Profile Picture"
-          />
-        </td>
-        <td>
-          <h1>Name</h1>
-          <p><em>Computer Engineering Student</em></p>
-          <p>
-            <em>
-              <strong>
-                <a href="https://animeshsagar.wordpress.com/"> Blog</a>
-              </strong>
-            </em>
-          </p>
-        </td>
-      </tr>
-    </table>
 
-    <p>
-      I'm a Android Developer and a Tech Enthusiast who loves everything which
-      involves code💻. Currently I am pursuing B.E. in Computer Engineering .I
-      love to explore all fields related to programming especially which
-      involves Java, Kotlin, Python🐍, Linux, Web development and its modules
-      .Apart from being a Tech Geek,I am an avid art🎨 lover and loves to try
-      various Platform.
-    </p>
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            @font-face {
+                font-family: Montserrat;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 100;
+                src: local("Montserrat Thin "), local("Montserrat-Thin"), url(static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"), url(static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")
+            }
 
-    <hr size="3" noshade />
+            @font-face {
+                font-family: Montserrat;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 100;
+                src: local("Montserrat Thin italic"), local("Montserrat-Thinitalic"), url(static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"), url(static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")
+            }
 
-    <h3>Education</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Year</th>
-          <th>Education</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2018</td>
-          <td>Education 1</td>
-        </tr>
-        <tr>
-          <td>2019</td>
-          <td>Education 2</td>
-        </tr>
-        <tr>
-          <td>2020</td>
-          <td>Education 3</td>
-        </tr>
-        <tr>
-          <td>2021</td>
-          <td>Education 4</td>
-        </tr>
-      </tbody>
-    </table>
+            @font-face {
+                font-family: Montserrat;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 200;
+                src: local("Montserrat Extra Light "), local("Montserrat-Extra Light"), url(static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"), url(static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")
+            }
 
-    <hr size="3" noshade />
+            @font-face {
+                font-family: Montserrat;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 200;
+                src: local("Montserrat Extra Light italic"), local("Montserrat-Extra Lightitalic"), url(static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"), url(static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")
+            }
 
-    <h3>Hobbies</h3>
-    <ol>
-      <li>Sketching</li>
-      <li>Singing</li>
-      <li>Blogging</li>
-    </ol>
+            @font-face {
+                font-family: Montserrat;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 300;
+                src: local("Montserrat Light "), local("Montserrat-Light"), url(static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"), url(static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")
+            }
 
-    <hr size="3" noshade />
+            @font-face {
+                font-family: Montserrat;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 300;
+                src: local("Montserrat Light italic"), local("Montserrat-Lightitalic"), url(static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"), url(static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")
+            }
 
-    <table cellspacing="10">
-      <tbody>
-        <tr>
-          <td>
-            <table cellspacing="10">
-              <tbody>
-                <tr>
-                  <td>Skill 1</td>
-                  <td>&#9733; &#9733; &#9733; &#9733; &#9733;</td>
-                </tr>
+            @font-face {
+                font-family: Montserrat;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 400;
+                src: local("Montserrat Regular "), local("Montserrat-Regular"), url(static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"), url(static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")
+            }
 
-                <tr>
-                  <td>Skill 2</td>
-                  <td>&#9733; &#9733; &#9734; &#9734; &#9734;</td>
-                </tr>
+            @font-face {
+                font-family: Montserrat;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 400;
+                src: local("Montserrat Regular italic"), local("Montserrat-Regularitalic"), url(static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"), url(static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")
+            }
 
-                <tr>
-                  <td>Skill 3</td>
-                  <td>&#9733; &#9733; &#9733; &#9734; &#9734;</td>
-                </tr>
+            @font-face {
+                font-family: Montserrat;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 500;
+                src: local("Montserrat Medium "), local("Montserrat-Medium"), url(static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"), url(static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")
+            }
 
-                <tr>
-                  <td>Skill 4</td>
-                  <td>&#9733; &#9733; &#9733; &#9733; &#9734;</td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-          <td>
-            <table cellspacing="10">
-              <tbody>
-                <tr>
-                  <td>Skill 5</td>
-                  <td>&#9733; &#9733; &#9733; &#9734; &#9734;</td>
-                </tr>
+            @font-face {
+                font-family: Montserrat;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 500;
+                src: local("Montserrat Medium italic"), local("Montserrat-Mediumitalic"), url(static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"), url(static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")
+            }
 
-                <tr>
-                  <td>Skill 6</td>
-                  <td>&#9733; &#9734; &#9734; &#9734; &#9734;</td>
-                </tr>
+            @font-face {
+                font-family: Montserrat;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 600;
+                src: local("Montserrat SemiBold "), local("Montserrat-SemiBold"), url(static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"), url(static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")
+            }
 
-                <tr>
-                  <td>Skill 7</td>
-                  <td>&#9733; &#9733; &#9733; &#9733; &#9733;</td>
-                </tr>
+            @font-face {
+                font-family: Montserrat;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 600;
+                src: local("Montserrat SemiBold italic"), local("Montserrat-SemiBolditalic"), url(static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"), url(static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")
+            }
 
-                <tr>
-                  <td>Skill 8</td>
-                  <td>&#9733; &#9733; &#9733; &#9733; &#9733;</td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            @font-face {
+                font-family: Montserrat;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 700;
+                src: local("Montserrat Bold "), local("Montserrat-Bold"), url(static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"), url(static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")
+            }
 
-    <hr size="3" noshade />
+            @font-face {
+                font-family: Montserrat;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 700;
+                src: local("Montserrat Bold italic"), local("Montserrat-Bolditalic"), url(static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"), url(static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")
+            }
 
-    <form action="mailto:xyz@gmail.com" method="POST" enctype="text/plain">
-      <table cellspacing="10">
-        <tbody>
-          <tr>
-            <td><label for="nameinput">Enter Name: </label></td>
-            <td><input id="nameinput" type="text" name="Name" /></td>
-          </tr>
+            @font-face {
+                font-family: Montserrat;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 800;
+                src: local("Montserrat ExtraBold "), local("Montserrat-ExtraBold"), url(static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"), url(static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")
+            }
 
-          <tr>
-            <td><label for="passwordinput">Enter Email: </label></td>
-            <td><input id="passwordinput" type="email" name="Email" /></td>
-          </tr>
+            @font-face {
+                font-family: Montserrat;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 800;
+                src: local("Montserrat ExtraBold italic"), local("Montserrat-ExtraBolditalic"), url(static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"), url(static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")
+            }
 
-          <tr>
-            <td><label for="messageInput">Your Message: </label></td>
-            <td>
-              <textarea
-                name="Message"
-                id="messageInput"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </td>
-          </tr>
+            @font-face {
+                font-family: Montserrat;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 900;
+                src: local("Montserrat Black "), local("Montserrat-Black"), url(static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"), url(static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")
+            }
 
-          <tr>
-            <td></td>
-            <td><input type="submit" /></td>
-          </tr>
-        </tbody>
-      </table>
-    </form>
-  </body>
+            @font-face {
+                font-family: Montserrat;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 900;
+                src: local("Montserrat Black italic"), local("Montserrat-Blackitalic"), url(static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"), url(static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")
+            }
+
+            @font-face {
+                font-family: Merriweather;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 300;
+                src: local("Merriweather Light "), local("Merriweather-Light"), url(static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"), url(static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")
+            }
+
+            @font-face {
+                font-family: Merriweather;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 300;
+                src: local("Merriweather Light italic"), local("Merriweather-Lightitalic"), url(static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"), url(static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")
+            }
+
+            @font-face {
+                font-family: Merriweather;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 400;
+                src: local("Merriweather Regular "), local("Merriweather-Regular"), url(static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"), url(static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")
+            }
+
+            @font-face {
+                font-family: Merriweather;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 400;
+                src: local("Merriweather Regular italic"), local("Merriweather-Regularitalic"), url(static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"), url(static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")
+            }
+
+            @font-face {
+                font-family: Merriweather;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 700;
+                src: local("Merriweather Bold "), local("Merriweather-Bold"), url(static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"), url(static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")
+            }
+
+            @font-face {
+                font-family: Merriweather;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 700;
+                src: local("Merriweather Bold italic"), local("Merriweather-Bolditalic"), url(static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"), url(static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")
+            }
+
+            @font-face {
+                font-family: Merriweather;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 900;
+                src: local("Merriweather Black "), local("Merriweather-Black"), url(static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"), url(static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")
+            }
+
+            @font-face {
+                font-family: Merriweather;
+                font-style: italic;
+                font-display: swap;
+                font-weight: 900;
+                src: local("Merriweather Black italic"), local("Merriweather-Blackitalic"), url(static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"), url(static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")
+            }
+        </style>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="shortcut icon" href="images/profile.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#663399" />
+        <title data-react-helmet="true">home | moresagar.com</title>
+        <meta data-react-helmet="true" name="description" content="android developer" />
+        <meta data-react-helmet="true" property="og:title" content="home" />
+        <meta data-react-helmet="true" property="og:description" content="android developer" />
+        <meta data-react-helmet="true" property="og:type" content="website" />
+        <meta data-react-helmet="true" name="keywords"
+            content="moresagar, sagarmore , portfolio, android, java, kotlin" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+
+    <body>
+        <div style="outline:none" tabindex="-1" role="group">
+            <div id="skeleton">
+                <h1>moresagar | home</h1>
+                <img src="images/profile.png" width="20%" alt="profile">
+                <p>Hi! I am Sagar More! I am CS Student.</p>
+                <p> I'm a Android Developer and a Tech Enthusiast who loves everything which involves code. Currently I
+                    am pursuing B.E. in Computer Engineering .I love to explore all fields related to programming
+                    especially which involves Java, Kotlin, Python, Linux, Web development and its modules. Apart from
+                    being a Tech Geek,I am an avid art lover and loves to try various Platform. </p>
+                <h2>🏫 education details</h2>
+                <ul>
+                    <li>
+                        <p>
+                        <table>
+                            <tr>
+                                <td id="education"> B.E. in Computer Engineering <div id="clg"> P.D.E.A.'s College of
+                                        Engineering </div>
+                                    <div id="clg-about"> I am a Engineering Student at P.D.E.A.'s College of
+                                        Engineering. </div>
+                                </td>
+                                <td id="year-label">
+                                    <strong>2020-2023</strong>
+                                </td>
+                            </tr>
+                        </table>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                        <table>
+                            <tr>
+                                <td id="education"> Diploma in Computer Engineering <div id="clg"> S.S.V.P.S's B.S Deore
+                                        Polytechnic </div>
+                                    <div id="clg-about"> I completed my Diploma at S.S.V.P.S's B.S Deore Polytechnic. I
+                                        have completed various projects and I concentrate on Product Development. </div>
+                                </td>
+                                <td id="year-label">
+                                    <strong>2018-2020</strong>
+                                </td>
+                            </tr>
+                        </table>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                        <table>
+                            <tr>
+                                <td id="education"> Junior College <div id="clg"> Jai Hind Junior College </div>
+                                    <div id="clg-about"> I completed my 11th and 12th grade in Science Stream under
+                                        Maharashtra State Board. </div>
+                                </td>
+                                <td id="year-label">
+                                    <strong>2016-2018</strong>
+                                </td>
+                            </tr>
+                        </table>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                        <table>
+                            <tr>
+                                <td id="education"> Schooling <div id="clg"> Agrasen High School </div>
+                                    <div id="clg-about"> I completed my schooling from Agrasen High School following the
+                                        Maharashtra State Board pattern. I was an active member in school in Student
+                                        Clubs and other activities. </div>
+                                </td>
+                                <td id="year-label">
+                                    <strong>2015-2016</strong>
+                                </td>
+                            </tr>
+                        </table>
+                        </p>
+                    </li>
+                </ul>
+                <h2>👻 skills</h2>
+                <p>
+                <ul>
+                    <li>Front-end: HTML, CSS</li>
+                    <li>Back-end: Java, Kotlin, Python</li>
+                    <li>Database: SQL, Firebase</li>
+                    <li>Android Development</li>
+                    <li>Proficiency in Microsoft office</li>
+                    <li>Windows/Linux Operating System</li>
+                </ul>
+                </p>
+                <h2>🧰 work experience</h2>
+                <p><strong>>> Technical Support Intern</strong>
+                    <br> Siddesh InfoTech Pvt. Ltd. | May 2019 - June 2019 <br> Maintained all MS-CIT labs . Setted
+                    MS-CIT exam test papers.
+                </p>
+                <h2>🛠️ projects</h2>
+                <p>
+                    <strong>>> FastPay - Shopping & Payment Portal for Supermarket</strong>
+                    <br> Android Application | Nov 2019 - Aug 2020 <br> &bull; Developed to solve long queue issue of
+                    supermarket <br> &bull; Comes with Admin Panel <br> &bull; Paytm as payment gateway <br>
+                    <em>Tech Stack : Java - Xml - Firebase <a target="_blank"
+                            href="https://github.com/animsh/FastPay">(click here)</a></em>
+                </p>
+                <p>
+                    <strong>>> Trace - Secure File Enctyption and Sharing</strong>
+                    <br> Android Application | Nov 2020 - Jan 2021 <br> &bull; Developed to file encryption & sharing
+                    <br> &bull; AES algorithm for file encryption <br>
+                    <em>Tech Stack : Java - Xml - Firebase <a target="_blank"
+                            href="https://github.com/animsh/Trace">(click here)</a></em>
+                </p>
+                <h2>💬 languages</h2>
+                <p> >> Marathi <br> >> English <br> >> Gujrati <br> >> Hindi </p>
+                <h2>🚀 other interest</h2>
+                <p> >> Sketching <br> >> Playing Guitar <br> >> Reading Books <br> >> Playing Badminton </p>
+            </div>
+        </div>
+    </body>
+    <footer id="skeleton">
+        <hr />
+        <div>
+            <p>
+            <div style="margin-bottom:4.375rem;">
+                <div>
+                    <p style="text-align: center;">
+                        <span> | <a target="_blank" href="https://www.linkedin.com/in/animshmore/">linkedin </a> |
+                        </span>
+                        <span> | <a target="_blank" href="https://github.com/animsh">github </a> | </span>
+                        <span> | <a target="_blank" href="https://www.instagram.com/__animesh7__/">instagram </a> |
+                        </span>
+                        <span> | <a target="_blank" href="https://animeshsagar.wordpress.com/">Blog </a> | </span>
+                    </p>
+                </div>
+            </div>
+    </footer>
+
 </html>
