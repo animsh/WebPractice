@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #545454;
+}
+
+h1 {
+  color: #4ab19a;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-family: "Sacramento", cursive;
+  font-size: 5.6rem;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  color: rgb(69, 178, 154);
+  text-decoration: none solid;
+  text-align: center;
+  text-indent: 0px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #4ab19a;
+}
+
+p {
+  font-size: 16px;
+}
+
+.td-style {
+  padding: 1rem 1.9rem 1rem 1.9rem;
+}
+
+.btn {
+    background: #45B29A;
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+ .btn:hover {
+    background: #3EA08A;
+    text-decoration: none;
+ }
+
+.top-container {
+  color: #4ab19a;
+  font-weight: 500;
+  padding-top: 100px;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: #e0ebe8;
+  position: relative;
+}
+
+.middle-container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 50rem;
+  margin: auto;
+  font-family: "Merriweather", serif;
+}
+
+.bottom-container {
+  padding: 3rem 3rem 2rem 3rem;
+  background-color: #c5ded7;
+  color: #4ab19a;
+}
+
+.header-link{
+  color: #4ab19a;
+  font-weight: 500;
+  font-size: 18px;
+  padding : 0 1.5rem 0 1.5rem;
+  text-decoration: none;
+}
+
+.header-link:hover{
+  color: #1a443b;
+}
+
+.footer-link {
+  color: #4ab19a;
+  font-weight: 500;
+  padding : 0 2rem 0 2rem;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #1a443b;
+}
+
+.copyright{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1rem 0 0rem 0;
+}
+
+.main-image {
+  width: 9rem;
+}
+
+.sub-image {
+  width: 4.5rem;
+}
+
+.profile {
+  padding: 4rem 12rem 4rem 12rem;
+}
+
+.skills {
+  padding: 4rem 0 4rem 0;
+}
+
+.contact-me {
+  padding: 4rem 5.5rem 4rem 5.5rem;
+}
+
+.h2-style {
+  color: #1e836c;
+  font-size: 40px;
+}
+
+.letter-style {
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(84, 84, 84);
+  text-align: center;
+  text-indent: 0px;
+
+  line-height: 30px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  padding: 0px;
+}
