@@ -63,15 +63,18 @@ p {
 /* Title Image */
 
 .title-image {
-  width: 60%;
-  margin: 8% 5% 8% 5%;
+  width: 22%;
+  margin: 4% 0% 0% 4%;
   transform: rotate(25deg);
+  position: absolute;
 }
 
 /* Feature Section */
 
 #features {
+  background-color: #fff;
   padding: 7% 15%;
+  position: relative;
 }
 
 .features-box {
@@ -126,4 +129,76 @@ p {
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-col {
+  padding: 3%;
+}
+
+.pricing-header {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 2.4rem;
+}
+
+/* Call to Action */
+
+#cta {
+  background-color: #ff4c68;
+  padding: 7% 15%;
+  color: #fff;
+}
+
+.cta-header {
+  font-family: Montserrat, sans-serif;
+  font-size: 3.4rem;
+  line-height: 1.5;
+  font-weight: 900;
+  margin: auto;
+}
+
+/* Footer */
+
+#footer {
+  padding: 7% 15%;
+  font-weight: 500;
+}
+
+.social-icon {
+  padding: 12px;
+}
+
+@media (max-width: 1000px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    width: 60%;
+    margin: 4% 0% 0% 4%;
+    transform: rotate(0);
+    position: static;
+  }
+
+  h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 3.6rem;
+    line-height: 1.5;
+    font-weight: 900;
+    margin: auto;
+    text-align: center;
+  }
+
+  .testimonial-image {
+    border-radius: 100%;
+    width: 20%;
+    margin: 20px;
+  }
 }
