@@ -1,2 +1,2 @@
 # WebPractice
- Web Practice Projects
+ Web Practice Projects - HTML, CSS
